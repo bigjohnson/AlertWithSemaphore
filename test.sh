@@ -4,7 +4,8 @@ SEMAFORO=/home/user/crons/test.www.github.com.SEMAFORO
 # Check the internmet connectivity
 if ping -c 1 www.google.it &> /dev/null || ping -c 1 www.github.com &> /dev/null || ping -c 1 www.facebook.com &> /dev/null
 then
-        if curl -m 30 -s https://www.github.com/ > /dev/null
+        # Check what you want
+        if curl -m 30 -s https://www.yoursite.com/ > /dev/null
         then
                 # Code executed when test is ok
                 if [ -e ${SEMAFORO} ]
