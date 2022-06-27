@@ -1,6 +1,6 @@
 #!/bin/bash
 # the directory "/home/user/crons/" must be present
-SEMAFORO=/home/user/crons/test.www.github.com.SEMAFORO
+SEMAFORO=/home/user/crons/test.www.yoursite.com.SEMAFORO
 # Check the internmet connectivity
 if ping -c 1 www.google.it &> /dev/null || ping -c 1 www.github.com &> /dev/null || ping -c 1 www.facebook.com &> /dev/null
 then
